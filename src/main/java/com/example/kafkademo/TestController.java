@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
 
+/**
+ * @author user
+ */
 @RestController
 public class TestController {
 
@@ -28,4 +31,5 @@ public class TestController {
         os.flush();
         os.close();
     }
+
 }

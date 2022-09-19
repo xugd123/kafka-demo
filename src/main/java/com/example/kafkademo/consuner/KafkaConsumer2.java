@@ -4,6 +4,9 @@ import com.example.kafkademo.pojo.UserMessage;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author user
+ */
 @Component
 public class KafkaConsumer2 {
 
