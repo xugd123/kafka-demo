@@ -1,6 +1,8 @@
 package com.example.kafkademo.sender;
 
+import org.apache.kafka.clients.admin.KafkaAdminClient;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Component;
@@ -9,12 +11,17 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 
 import javax.annotation.Resource;
 
+/**
+ * @author user
+ */
 @Component
 public class KafkaMessageSender {
 
 
-    @Resource
+    @Autowired
     private KafkaTemplate<String,Object> kafkaTemplate;
+
+
 
     /**
      *  发送消息到指定的topic主题

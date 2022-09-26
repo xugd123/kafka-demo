@@ -10,11 +10,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaConsumer2 {
 
-    @KafkaListener(topics = "userTopic2",groupId = "user-group-id-2")
-    public void onMessage(UserMessage message){
-        System.out.println("消费信息=======================");
-        System.out.println(message);
-    }
+//    @KafkaListener(topics = "userTopic2",groupId = "user-group-id-2")
+//    public void onMessage(UserMessage message){
+//        System.out.println("消费信息=======================");
+//        System.out.println(message);
+//    }
 
 
 }

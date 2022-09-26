@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
  * @author user
  */
 @Data
-
 public class UserMessage implements Serializable {
 
     private Integer id;
